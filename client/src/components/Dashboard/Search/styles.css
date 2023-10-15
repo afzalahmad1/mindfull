@@ -1,0 +1,45 @@
+.search-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2rem; 
+    margin: 1rem ;
+    color: var(--grey);
+    background-color: var(--darkgrey);
+    width: 35%;
+    border-radius: 3rem;
+    /* border: 2px solid red; */
+}
+
+.search-flex input{
+    background-color:var(--darkgrey);
+    width: 100%;
+    font-family: "inter";
+    font-size: 1rem;
+    color: var(--grey);
+    border: none;
+}
+
+.search-flex input:focus{
+    outline: none;
+}
+
+.search-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 5rem;
+}
+.add-user{
+    /* border: 2px solid red; */
+    display: flex;
+    background-color: var(--blue);
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    /* height: 50px; */
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}

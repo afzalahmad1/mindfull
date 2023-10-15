@@ -1,0 +1,113 @@
+.form{
+    /* border: 2px solid red; */
+    /* height: 99vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 600px;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 7px;
+    padding-bottom: 20px;
+    /* border: 2px solid red; */
+
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+.text{
+    color: var(--blue);
+    font-size: 42px;
+    font-weight: 700;
+    /* border: 2px solid red; */
+}
+.underline{
+    width: 65px;
+    height: 6px;
+    background: var(--blue);
+    border-radius: 9px;
+    /* border: 2px solid red; */
+}
+.inputs{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* border: 2px solid black; */
+}
+.input{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left:1rem ;
+    /* margin: auto; */
+    width: 480px;
+    height: 50px;
+    background: #eaeaea;
+    border-radius: 6px;
+    /* border: 2px solid black; */
+}
+
+.input input{
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #797979;
+    font-size: 19px;
+}
+.submit-container{
+    display: flex;
+    gap: 30px;
+    margin: 20px auto;
+    /* border: 2px solid black; */
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 45px;
+    color: var(--white);
+    background: var(--blue);
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    /* border: 2px solid black; */
+}
+.message{
+    margin-top: 10px;
+}
+.gender{
+
+    display: flex;
+    gap: 10px;
+    padding-left: 1rem;
+    background:#eaeaea ;
+    align-items: center;
+    border-radius: 6px;
+    width: 480px;
+    height: 50px;
+}
+.dropdown{
+    padding: .3rem;
+    border-radius: 7px;
+    border: none;
+    width: 7rem;
+    outline: none;
+}

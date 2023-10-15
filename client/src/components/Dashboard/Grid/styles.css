@@ -1,0 +1,28 @@
+.grid-container{
+    width: 270px;
+    background-color: var(--darkgrey);
+    border: 2px solid var(--darkgrey);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    /* border: 2px solid red; */
+}
+.grid-container:hover{
+    transition: all 0.3s;
+    border: 2px solid var(--blue);
+}
+
+.grid-content{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 10px;
+    flex-flow: row wrap;
+}
+
+.edit-delete-logo{
+    /* border: 1px solid red; */
+    display: flex ;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
