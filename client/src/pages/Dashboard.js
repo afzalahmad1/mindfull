@@ -26,7 +26,7 @@ const Dashboard = ()=>{
     },[reload])
     const getAllUsers = async()=>{
         try {
-            const res = await axios.get(`${process.env.REACT_APP_BASE_URL}/user/getAllUsers`)
+            const res = await axios.get(`https://mindfull-klo6.onrender.com/user/getAllUsers`)
             setUsers(res.data.allUsers);
 
         } catch (error) {
@@ -38,7 +38,7 @@ const Dashboard = ()=>{
         // console.log("id",id);
         try {
 
-            const res = await axios.delete(`${process.env.REACT_APP_BASE_URL}/user/delete/${id}`)
+            const res = await axios.delete(`https://mindfull-klo6.onrender.com/user/delete/${id}`)
             // console.log("res",res);
             if(res.data.message === "User is deleted successfully"){
                 setReload(!reload)
@@ -61,7 +61,7 @@ const Dashboard = ()=>{
         }
         try {
 
-            const res = await axios.put(`${process.env.REACT_APP_BASE_URL}/user/update`,updateObj)
+            const res = await axios.put(`https://mindfull-klo6.onrender.com/user/update`,updateObj)
             console.log("res",res);
             if(res.data.message === "User succesfully updated!"){
                 alert("User succesfully updated!")
@@ -77,7 +77,7 @@ const Dashboard = ()=>{
 
     const handleAdd = (e) => {
         axios
-          .post(`${process.env.REACT_APP_BASE_URL}/user/addUser`, addUser)
+          .post(`https://mindfull-klo6.onrender.com/user/addUser`, addUser)
           .then((res) => {
             // console.log(res.data.data.token);
             // console.log(res.data.message);

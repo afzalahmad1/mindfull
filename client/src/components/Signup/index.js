@@ -31,7 +31,7 @@ const Signup = () => {
   const registerUser = async () => {
     try {
       const data = await axios.post(
-        `${process.env.REACT_APP_BASE_URL}/user/register`,
+        `https://mindfull-klo6.onrender.com/user/register`,
         user
         );
       console.log(data);
@@ -116,7 +116,7 @@ const Signup = () => {
             />
           </div>
           <div className="input">
-            <label htmlFor="know">How did you hear about this?</label>
+            <label htmlFor="know">How did you hear about this?</label>    
             <select name="knows" id="know" className="dropdown" value={user.knows} onChange={handleUser}>
                 <option value="">--------</option>
                 <option value="linkedIn">LinkedIn</option>

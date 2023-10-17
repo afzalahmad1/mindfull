@@ -29,7 +29,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     axios
-      .post(`${process.env.REACT_APP_BASE_URL}/user/login`, loginObj)
+      .post(`https://mindfull-klo6.onrender.com/user/login`, loginObj)
       .then((res) => {
         // console.log(res.data.data.token);
         console.log(res.data.message);
